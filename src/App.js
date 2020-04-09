@@ -23,11 +23,12 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Users />
+        <div className='container'>
+          <Users loading={this.state.loading} users={this.state.users} />
+        </div>
       </div>
     );
   }
 }
-
 
 export default App;
